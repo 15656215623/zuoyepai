@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ui-nav-bar": "../../packages/touchui-wx-components/ui-nav-bar/dist/index",
+    "ui-sticky": "../../packages/touchui-wx-components/ui-sticky/dist/index"
+  },
+  "navigationBarTitleText": "新闻详情页",
+  "navigationBarBorderColor": "rgba(231, 231, 231, 0.6)",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black"
+}

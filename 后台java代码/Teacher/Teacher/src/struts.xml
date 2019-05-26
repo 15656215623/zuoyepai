@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.action.extension" value="do,action,kk"></constant>
+	<package name="user" extends="struts-default">
+		<default-interceptor-ref name="defaultStack"></default-interceptor-ref>
+		<!--  根据类型显示新闻-->
+		<action name="queryNews" class="queryNews" method="querynews">
+		</action>
+		<!-- 普通用户注册 -->
+		<action name="uregedit" class="ulogin" method="regedit">
+		</action>
+		<!-- 普通用户登录 -->
+		<action name="ulgn" class="ulogin" method="login">
+		</action>
+		<!-- 普通用户修改密码-->
+		<action name="repass" class="ulogin" method="repass">
+		</action>
+		<!-- 新闻详情页面 -->
+		<action name="newsInfo" class="newsInfo" method="querybyid">
+		</action>
+		<!--发布新闻  -->
+		<action name="pushNews" class="pushNews" method="copyfile">
+		</action>
+		<!-- 拷贝图片 -->
+		<action name="copyfile" class="saveImg" method="copyfile">
+		</action>
+		<!-- 发布作业 -->
+		<action name="savework" class="sendWork" method="save">
+		</action>
+		<!-- 消息推送 -->
+		<action name="push" class="push" method="query">
+		</action>
+		<!-- 显示所有的请求作业 -->
+		<action name="show" class="setCorrect" method="show">
+		</action>
+		<!-- 批改作业 -->
+		<action name="save" class="setCorrect" method="save">
+		</action>
+		<!--用户查看批改的作业  -->
+		<action name="look" class="setCorrect" method="look">
+		</action>
+		</package>
+</struts>

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/center/center",
+    "pages/user/reg",
+    "pages/ulogin/ulogin",
+    "pages/news/newsinfo",
+    "pages/pushnews/pnews",
+    "pages/setpass/setpass",
+    "pages/photo/photo",
+    "pages/canvas/canvas",
+    "pages/work/work",
+    "pages/speck/speck",
+    "pages/admin/admin",
+    "pages/mywork/mywork"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#efefef",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "TouchUI",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9f9f9f",
+    "selectedColor": "#00c0e4",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "./images/new.png",
+        "iconPath": "./images/newd.png",
+        "pagePath": "pages/home/index",
+        "text": "资讯"
+      },
+      {
+        "selectedIconPath": "./images/pz.png",
+        "iconPath": "./images/pzd.png",
+        "pagePath": "pages/photo/photo",
+        "text": "拍题"
+      },
+      {
+        "selectedIconPath": "./images/my.png",
+        "iconPath": "./images/myd.png",
+        "pagePath": "pages/center/center",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "theme": {
+    "theme-color": "#39f"
+  },
+  "sitemapLocation": "sitemap21.json"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<!-- 实体类和表的映射 -->
+<class name="cn.com.bean.Correct" table="Correct" catalog="teacher" >
+<id name="cid" column="cid"  type="java.lang.Integer">
+<generator class="identity"></generator>
+</id>
+<property name="wid" type="java.lang.Integer" length="255"></property>
+<property name="teacher" type="java.lang.String" length="255"></property>
+<property name="user" type="java.lang.String" length="255"></property>
+<property name="km" type="java.lang.String" length="255"></property>
+<property name="pl" type="java.lang.String" length="255"></property>
+<property name="url" type="java.lang.String" length="255"></property>
+</class>
+</hibernate-mapping>

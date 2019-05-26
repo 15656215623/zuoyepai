@@ -1,0 +1,46 @@
+<view>
+  <ui-segment bindchange="changeTab2" _pid="{{_pid}}">
+    <ui-segment-item _pid="{{_pid}}">
+      推荐
+    </ui-segment-item>
+    <ui-segment-item _pid="{{_pid}}">
+      教育
+    </ui-segment-item>
+    <ui-segment-item _pid="{{_pid}}">
+      成长
+    </ui-segment-item>
+    <ui-segment-item _pid="{{_pid}}">
+      心理
+    </ui-segment-item>
+    <ui-segment-item _pid="{{_pid}}">
+      课程
+    </ui-segment-item>
+  </ui-segment>
+  <view class="tabContent">
+    <!-- 连接数据库 -->
+    <view class="top_tip" wx:for="{{mydata}}" data-id="{{item.nid}}" data-kinds="{{item.kinds}}" wx:key="item.nid" catchtap="newsinfo">
+      <view hover-class="touchui-hover" class="ui-row ui-row-border-bottom" style="height:80px;">
+        <view class="ui-col ui-col-align-center align-center valign-middle" style="flex:0 0 80px;">
+          <view class="ui-col-content align-center valign-middle">
+            <image src="{{item.img}}" class="im" />
+          </view>
+        </view>
+        <view class="text ui-col ui-col-align-left align-left valign-middle" style="padding-left: 10px; padding-right: 10px;">
+          <view class="ui-col-content align-left valign-middle">
+            <view style="width: 100%;">
+              <view class="ui-row" style="height:30px;">
+                <view class="ui-col ui-col-align-left align-left valign-middle" style="">
+                  <view class="ui-col-content align-left valign-middle">
+                    <text class="tme">{{item.title}}</text>
+                  </view>
+                </view>
+              </view>
+              <view>类型{{item.kinds}}、浏览量{{item.count}}、{{item.time}}发布</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 连接数据库 -->
+  </view>
+</view>

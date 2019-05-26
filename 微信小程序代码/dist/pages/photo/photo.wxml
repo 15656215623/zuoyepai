@@ -1,0 +1,11 @@
+<view>
+  <view bindtap="chooseimage" data-kinds="数学">
+    <image src="../../images/yw.png" class="img" />
+  </view>
+  <view bindtap="chooseimage" data-kinds="数学">
+    <image src="../../images/sx.png" class="img" />
+  </view>
+  <view bindtap="chooseimage" data-kinds="英语">
+    <image src="../../images/yy.png" class="img" />
+  </view>
+</view>

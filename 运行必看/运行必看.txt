@@ -1,0 +1,29 @@
+1、app.js里面把 
+globalData: {
+    url: "http://192.168.0.101/"
+  },
+改成自己电脑的ip地址
+
+
+
+2、数据库中news表里面的img属性下面的地址也改成自己的ip地址
+http://192.168.0.101/news/jy1.jpg
+
+
+
+3、找到tomcat的配置配置server.xml(在conf文件夹里面)
+把host改成你的ip地址，然后把以下这一段复制，覆盖掉原本server.xml里面相应的一段(<Host name="host")
+把端口改成80
+ 
+我附上一份我的server.xml文件（配置好的！可以参照）
+
+ <Host name="192.168.0.101"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true">
+         <Context path="" docBase="/Teacher"/>
+
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+
+      </Host>
+

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ui-segment": "../../packages/touchui-wx-components/ui-segment/dist/index",
+    "ui-segment-item": "../../packages/touchui-wx-components/ui-segment-item/dist/index"
+  }
+}

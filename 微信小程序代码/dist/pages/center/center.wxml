@@ -1,0 +1,103 @@
+<view>
+  <view>
+    <view wx:if="{{login}}" class="bg">
+      <button size="mini" class="btn">用户名{{name}}</button>
+    </view>
+    <view class="bg" wx:else="">
+      <button type="warn" bindtap="tologin" size="mini" class="btn">还未登录</button>
+    </view>
+  </view>
+  <view class="info">
+    <view class="ui-row-list ui-row-list-border-indent" style="">
+      <view class="ui-row" style="height:50px;">
+        <view class="ui-col ui-col-align-center align-center valign-middle" style="flex:0 0 40px;">
+          <view class="ui-col-content align-center valign-middle">
+            <span type="comment" size="20" color="#545454" class="ui-icon icon-comment" style="color: #545454;font-size: 20px;"></span>
+          </view>
+        </view>
+        <view class="text ui-col" bindtap="repass" style="">
+          <view class="ui-col-content">
+            修改密码
+          </view>
+        </view>
+        <view class="ui-col valign-middle" style="flex:0 0 25px;">
+          <view class="ui-col-content valign-middle">
+            <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{iden}}">
+        <view bindtap="pgzy" class="ui-row" style="height:50px;">
+          <view class="ui-col ui-col-align-center align-center valign-middle" style="flex:0 0 40px;">
+            <view class="ui-col-content align-center valign-middle">
+              <span type="comment" size="20" color="#545454" class="ui-icon icon-comment" style="color: #545454;font-size: 20px;"></span>
+            </view>
+          </view>
+          <view class="text ui-col" style="">
+            <view class="ui-col-content">
+              批改学生作业
+            </view>
+          </view>
+          <view class="ui-col valign-middle" style="flex:0 0 25px;">
+            <view class="ui-col-content valign-middle">
+              <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+            </view>
+          </view>
+        </view>
+        <view bindtap="pnews" class="ui-row" style="height:50px;">
+          <view class="ui-col ui-col-align-center align-center valign-middle" style="flex:0 0 40px;">
+            <view class="ui-col-content align-center valign-middle">
+              <span type="comment" size="20" color="#545454" class="ui-icon icon-comment" style="color: #545454;font-size: 20px;"></span>
+            </view>
+          </view>
+          <view class="text ui-col" style="">
+            <view class="ui-col-content">
+              发布新闻资讯
+            </view>
+          </view>
+          <view class="ui-col valign-middle" style="flex:0 0 25px;">
+            <view class="ui-col-content valign-middle">
+              <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:else="">
+        <view class="ui-row" style="height:50px;">
+          <view class="ui-col ui-col-align-center align-center valign-middle" style="flex:0 0 40px;">
+            <view class="ui-col-content align-center valign-middle">
+              <span type="comment" size="20" color="#545454" class="ui-icon icon-comment" style="color: #545454;font-size: 20px;"></span>
+            </view>
+          </view>
+          <view class="text ui-col" bindtap="myzy" style="">
+            <view class="ui-col-content">
+              我的作业
+            </view>
+          </view>
+          <view class="ui-col valign-middle" style="flex:0 0 25px;">
+            <view class="ui-col-content valign-middle">
+              <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="ui-row" style="height:50px;">
+        <view class="ui-col ui-col-align-center align-center valign-middle" style="flex:0 0 40px;">
+          <view class="ui-col-content align-center valign-middle">
+            <span type="comment" size="20" color="#545454" class="ui-icon icon-comment" style="color: #545454;font-size: 20px;"></span>
+          </view>
+        </view>
+        <view class="text ui-col" bindtap="exit" style="">
+          <view class="ui-col-content">
+            退出
+          </view>
+        </view>
+        <view class="ui-col valign-middle" style="flex:0 0 25px;">
+          <view class="ui-col-content valign-middle">
+            <span type="arrow-right" class="ui-icon icon-arrow-right" style="font-size: 16px;"></span>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

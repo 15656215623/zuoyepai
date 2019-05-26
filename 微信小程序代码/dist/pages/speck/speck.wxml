@@ -1,0 +1,42 @@
+<view>
+  <view class="frm">
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:200px;">
+      <view class="ui-col ui-col-12 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 100%;">
+        <view class="ui-col-content align-center valign-middle">
+          <image src="{{wurl}}" style="width:800rpx; height:800rpx" />
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:60px;">
+      <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content align-center valign-middle">
+          老师寄语
+        </view>
+      </view>
+      <view class="ui-col ui-col-8 ui-col-align-center align-center valign-middle" style="flex: 0 0 66.66666666666666%;">
+        <view class="ui-col-content align-center valign-middle">
+          <input name="input" placeholder="请输入老师寄语" bindinput="getcontent"></input>
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:60px;">
+      <view class="ui-col ui-col-2 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 16.666666666666664%;">
+        <view class="ui-col-content align-center valign-middle">
+          类型
+        </view>
+      </view>
+      <view class="ui-col ui-col-8 ui-col-align-center align-center valign-middle" style="flex: 0 0 66.66666666666666%;">
+        <view class="ui-col-content align-center valign-middle">
+          {{kinds}}
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content align-center valign-middle">
+          <button type="primary" bindtap="pushcon">批改完成</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,65 @@
+<view>
+  <view class="frm">
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content align-center valign-middle">
+          新闻标题
+        </view>
+      </view>
+      <view class="ui-col ui-col-8 ui-col-align-center align-center valign-middle" style="flex: 0 0 66.66666666666666%;">
+        <view class="ui-col-content align-center valign-middle">
+          <input name="input" placeholder="请输入新闻标题" bindinput="gettitle"></input>
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content align-center valign-middle">
+          新闻内容
+        </view>
+      </view>
+      <view class="ui-col ui-col-8 ui-col-align-center align-center valign-middle" style="flex: 0 0 66.66666666666666%;">
+        <view class="ui-col-content align-center valign-middle">
+          <textarea placeholder="请输入新闻内容" name="textarea" bindinput="getcontent" class="cnt">
+            </textarea></view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:60px;">
+      <view class="ui-col ui-col-2 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 16.666666666666664%;">
+        <view class="ui-col-content align-center valign-middle">
+          类型
+        </view>
+      </view>
+      <view class="ui-col ui-col-10 ui-col-align-center align-center valign-middle" style="flex: 0 0 83.33333333333334%;">
+        <view class="ui-col-content align-center valign-middle">
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}" wx:key="item">
+              <radio value="{{item.name}}" checked="{{item.checked}}" color="#39f">
+                {{item.value}}
+              </radio>
+            </label>
+          </radio-group>
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-6 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 50%;">
+        <view class="ui-col-content align-center valign-middle">
+          <button style="margin:30rpx;" bindtap="chooseimage">上传图片</button>
+        </view>
+      </view>
+      <view class="ui-col ui-col-6 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 50%;">
+        <view class="ui-col-content align-center valign-middle">
+          <image src="{{tempFilePaths}}" style="width:300rpx; height: 400rpx" />
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+        <view class="ui-col-content align-center valign-middle">
+          <button type="primary" bindtap="pushnews">发布新闻</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

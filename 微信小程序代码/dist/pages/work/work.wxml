@@ -1,0 +1,40 @@
+<view class="tabContent">
+  <!-- 连接数据库 -->
+  <view class="top_tip" wx:for="{{mydata}}" wx:key="item.wid">
+    <view hover-class="touchui-hover" class="ui-row ui-row-border-bottom" style="height:80px;">
+      <view class="ui-col ui-col-align-center align-center valign-middle" style="flex:0 0 80px;">
+        <view class="ui-col-content align-center valign-middle">
+          <image src="{{item.wurl}}" class="im" />
+        </view>
+      </view>
+      <view class="text ui-col ui-col-align-left align-left valign-middle" style="padding-left: 10px; padding-right: 10px;">
+        <view class="ui-col-content align-left valign-middle">
+          <view style="width: 100%;">
+            <view class="ui-row" style="height:30px;">
+              <view class="ui-col ui-col-align-left align-left valign-middle" style="">
+                <view class="ui-col-content align-left valign-middle">
+                  <text class="tme">学生:{{item.username}}</text>
+                </view>
+              </view>
+            </view>
+            <view>
+              <view class="ui-row" style="height:40px;">
+                <view class="ui-col ui-col-6 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 50%;">
+                  <view class="ui-col-content align-center valign-middle">
+                    类型{{item.kinds}}
+                  </view>
+                </view>
+                <view class="ui-col ui-col-6 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 50%;">
+                  <view class="ui-col-content align-center valign-middle">
+                    <button size="mini" type="primary" catchtap="workinfo" data-username="{{item.username}}" data-wid="{{item.wid}}" data-wurl="{{item.wurl}}" data-kinds="{{item.kinds}}">批改</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 连接数据库 -->
+</view>

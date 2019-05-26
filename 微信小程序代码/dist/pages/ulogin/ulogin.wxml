@@ -1,0 +1,76 @@
+<view>
+  <view class="frm">
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-border-right ui-col-align-center align-center valign-middle" style="flex:0 0 60px;">
+        <view class="ui-col-content align-center valign-middle">
+        </view>
+      </view>
+      <view class="ui-col" style="">
+        <view class="ui-col-content">
+          <view class="ui-row" style="height:40px;">
+            <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+              <view class="ui-col-content align-center valign-middle">
+                用户名
+              </view>
+            </view>
+            <view class="ui-col ui-col-8 ui-col-align-center align-center valign-middle" style="flex: 0 0 66.66666666666666%;">
+              <view class="ui-col-content align-center valign-middle">
+                <input name="input" placeholder="请输入用户名" bindinput="username"></input>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-border-right ui-col-align-center align-center valign-middle" style="flex:0 0 60px;">
+        <view class="ui-col-content align-center valign-middle">
+        </view>
+      </view>
+      <view class="ui-col" style="">
+        <view class="ui-col-content">
+          <view class="ui-row" style="height:40px;">
+            <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+              <view class="ui-col-content align-center valign-middle">
+                密码
+              </view>
+            </view>
+            <view class="ui-col ui-col-8 ui-col-align-center align-center valign-middle" style="flex: 0 0 66.66666666666666%;">
+              <view class="ui-col-content align-center valign-middle">
+                <input placeholder="设置密码" password="true" bindinput="password"></input>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="ui-row ui-row-border-top ui-row-border-bottom" style="margin-bottom: 20px;height:40px;">
+      <view class="ui-col ui-col-border-right ui-col-align-center align-center valign-middle" style="flex:0 0 60px;">
+        <view class="ui-col-content align-center valign-middle">
+
+        </view>
+      </view>
+      <view class="ui-col" style="">
+        <view class="ui-col-content">
+          <view class="ui-row" style="height:40px;">
+            <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+              <view class="ui-col-content align-center valign-middle">
+                <button type="primary" bindtap="submitHandler">登录</button>
+              </view>
+            </view>
+            <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+              <view class="ui-col-content align-center valign-middle">
+                <button bindtap="ureg">用户注册</button>
+              </view>
+            </view>
+            <view class="ui-col ui-col-4 ui-col-border-right ui-col-align-center align-center valign-middle" style="flex: 0 0 33.33333333333333%;">
+              <view class="ui-col-content align-center valign-middle">
+                <button bindtap="adm">admin</button>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
